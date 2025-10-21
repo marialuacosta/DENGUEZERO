@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blog Simples</h1>
+    <div>
+      <a href="edit-user.html">Editar Usuário</a>
+      <button id="logoutBtn">Sair</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="newPost">
+      <h2>Nova Publicação</h2>
+      <textarea id="postContent" placeholder="O que você quer compartilhar?"></textarea>
+      <button id="postBtn">Publicar</button>
+    </section>
+
+    <section id="posts">
+      <h2>Publicações</h2>
+      <div id="postList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

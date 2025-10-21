@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Blog Simples</h1>
+      <div>
+        <a href="edit-user.html">Editar Usuário</a>
+        <button id="logoutBtn">Sair</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="post" id="post-page">
+        <p><strong id="author"></strong></p>
+        <p id="content"></p>
+        <small id="date"></small>
+        <div class="post-buttons">
+            <a href="edit-post.html">Editar</a>
+        </div>
+      </article>
+
+      <section id="comments-section">
+        <h2>Comentários</h2>
+
+        <!-- Lista de comentários -->
+        <div id="comments-list"></div>
+
+        <!-- Formulário para comentar -->
+        <div id="comment-form-container">
+          <textarea
+            id="commentContent"
+            placeholder="Escreva um comentário..."
+            rows="3"
+          ></textarea>
+          <button id="commentBtn">Enviar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
